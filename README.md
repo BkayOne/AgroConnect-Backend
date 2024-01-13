@@ -3,17 +3,17 @@
 
 An ongoing project
 
-## About Farmy
+## About AgroConnect
 
 <img src="./public/img/farmy.png" alt="Logo" />
 
-Farmy is an efficient AgricEcommerce solution where everyone can buy fresh agricultural products directly from farmers and allow farmers to sell their products with no extra fees in between. It is an online market for buyers and sellers, but exclusively for the agricultural sector
+AgroConnect is an efficient AgricEcommerce solution where everyone can buy fresh agricultural products directly from farmers and allow farmers to sell their products with no extra fees in between. It is an online market for buyers and sellers, but exclusively for the agricultural sector
 
 Here's why:
 
 - Middlemen intervention raise price for consumers. Farmers encounter high production costs in their efforts to boost production but hardly get fair pricing of their products from the middlemen. This attitude of middle men have discouraged genuine investors getting into agriculture because of the marginal profit associated with it as the middle men cart away the bulk of the profits. Thus, the activities of middlemen seem to be a threat to food security.
 
-- Farmy allows farmers to freely list their produce and allows potential sellers to go through them. The buyer can list the quantity of the produce. Location of the buyer is also listed. Sellers can browse through the listed products and contact the buyer directly.
+- AgroConnect allows farmers to freely list their produce and allows potential sellers to go through them. The buyer can list the quantity of the produce. Location of the buyer is also listed. Sellers can browse through the listed products and contact the buyer directly.
 
 ### Backend API Built With
 
@@ -50,8 +50,8 @@ List of major frameworks use to build getIdea.
 ### 1. Clone the repository
 
 ```bash
-git clone https://gitlab.com/calvin-puram/farmy.git
-cd farmy
+git clone https://https://github.com/BkayOne/AgroConnect-Backend.git
+cd AgroConnect
 cp .env.example /.env
 # Edit all three .env files to meet your requirements
 ```
