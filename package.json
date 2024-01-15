@@ -8,7 +8,7 @@
     "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "calvin Job <puram.calvin@gmail.com>",
+  "author": "Frankelly Ozonwu <chiedoziefrankelly@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
