@@ -8,11 +8,11 @@ const CartItemSchema = new mongoose.Schema(
     name: String,
     price: Number,
     count: Number,
-    createdAt{
+    createdAt: {
     type: Date,
     default: Date.now
     }
-  },
+  }
   
 );
 
@@ -31,11 +31,11 @@ const OrderSchema = new mongoose.Schema(
     },
     updated: Date,
     user: { type: ObjectId, ref: "User" },
-    createdAt{
+    createdAt: {
     type: Date,
     default: Date.now
    }
-  },
+  }
   
 );
 

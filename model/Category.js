@@ -9,11 +9,11 @@ const categorySchema = new mongoose.Schema(
             maxlength: 32,
             unique: true
         },
-        createdAt{
+        createdAt: {
           type: Date,
           default: Date.now
         }
-    },
+    }
     
 );
 

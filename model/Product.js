@@ -40,11 +40,11 @@ const productSchema = new mongoose.Schema(
             required: false,
             type: Boolean
         },
-        createdAt{
+        createdAt: {
           type: Date,
           default: Date.now
         }
-    },
+    }
     
 );
 
