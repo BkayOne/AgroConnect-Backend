@@ -17,9 +17,9 @@ const PORT = process.env.PORT || 5000;
 
 
 
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT, async () => {
   console.log('Connecting to db...')
-  connectDB();
+  await connectDB();
   console.log('Db is connected...')
   console.log(
     chalk.blue(

@@ -35,33 +35,30 @@ exports.signup = catchAsync(async (req, res, next) => {
     passwordResetExpires,
     passwordResetToken,
   } = req.body;
+  console.log(req.body)
 
   const checkUser = await Users.findOne({ email });
 
   if (checkUser) {
-    return new AppError("user already in the database", 400);
+    // return new AppError("user already in the database", 400);
+    return {message: "user already in the database"}
   }
 
-  const avatar = normalize(
-    gravatar.url(email, {
-      s: "200",
-      r: "pg",
-      d: "mm",
-    }),
-    { forceHttps: true }
-  );
+  // const avatar = normalize(
+  //   gravatar.url(email, {
+  //     s: "200",
+  //     r: "pg",
+  //     d: "mm",
+  //   }),
+  //   { forceHttps: true }
+  // );
+  console.log('Registration undergoing...', req.body)
 
   const user = await Users.create({
-    name,
-    email,
-    password,
-    photo: "avatar",
-    passwordConfirm,
-    passwordChangeAt,
-    role,
-    passwordResetExpires,
-    passwordResetToken,
+ 
   });
+
+
 
   sendToken(user, res, req, 201);
 });

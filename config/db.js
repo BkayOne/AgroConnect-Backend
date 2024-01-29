@@ -11,7 +11,7 @@ const connectDB = async () => {
     });
 
     console.log(
-      chalk.yellowBright(`connected to DB on host: ${conn.connection.host}`)
+      chalk.yellowBright(`connected to DB on host: ${conn }`)
     );
   } catch (err) {
     console.log(chalk.red(`mongoDB error: ${err.message}`));
